@@ -6,7 +6,7 @@
       :value="query"
       :class="{ focused: focused }"
       :placeholder="placeholder"
-      autocomplete="off"
+      autocomplete="on"
       spellcheck="false"
       @input="query = $event.target.value"
       @focus="focused = true"
@@ -254,7 +254,7 @@ function highlight(str, strHighlight) {
       cursor auto
       border-color $accentColor
   .suggestions
-    background #fff
+    background #BDBDBD
     min-width 500px
     max-width 700px
     position absolute
@@ -289,7 +289,7 @@ function highlight(str, strHighlight) {
         .page-title
           width: 35%
           border 1px solid $borderColor
-          background: #f5f5f5
+          background: #bfbfbf
           border-left none
           display table-cell
           text-align right
